@@ -1,5 +1,15 @@
-import { Input } from '../../../../core/components/Form/components/Input/Input';
+import type { FC } from 'react';
+import styles from './Name.module.css';
 
-export const Name = () => {
-  return <Input type='text'></Input>;
+interface Props {
+  text: string;
+}
+
+export const Name: FC<Props> = ({ text }) => {
+  return (
+    <>
+      <p>{text}</p>
+      <input type='text' />
+    </>
+  );
 };

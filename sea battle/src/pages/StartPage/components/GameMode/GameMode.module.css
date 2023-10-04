@@ -1,0 +1,12 @@
+.choiceMode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .choiceItem {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
