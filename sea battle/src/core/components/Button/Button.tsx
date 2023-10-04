@@ -7,6 +7,6 @@ interface Props {
   children?: JSX.Element;
 }
 
-export const Button: FC<Props> = () => {
-  return <button className={styles.button}></button>;
+export const Button: FC<Props> = ({ value }) => {
+  return <button className={styles.button}>{value}</button>;
 };

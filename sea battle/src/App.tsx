@@ -1,6 +1,4 @@
-import './App.css';
-import { GamePage } from './pages/GamePage/GamePage';
+import type { FC } from 'react';
+import { StartPage } from './pages/StartPage/StartPage';
 
-const App = () => GamePage;
-
-export default App;
+export const App: FC = () => <StartPage />;
