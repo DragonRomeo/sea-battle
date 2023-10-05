@@ -4,13 +4,7 @@ import styles from './StartPage.module.css';
 import { Name } from './components/Name/Name';
 import { GameMode } from './components/GameMode/GameMode';
 import { ChangeEvent } from 'react';
-import {Routes, Route, Link } from 'react-router-dom';
-import { TestPage } from './TestPage';
-import { GamePage } from '../GamePage/GamePage';
-import { NotFoundPage } from '../NotFoundPage/NotFoundPage';
-
-GamePage;
-TestPage;
+import { Link } from 'react-router-dom';
 
 interface Props {
   className?: string;
@@ -36,13 +30,8 @@ export const StartPage: FC<Props> = () => {
         ></GameMode>
 
         <button className={styles.button}>
-          <Link to='/GamePage'>NextPage</Link>
+          <Link to='/game'>NextPage</Link>
         </button>
-
-        <Routes>
-          <Route path='/GamePage' element={<GamePage />} />
-          <Route path='*' element={<NotFoundPage />}></Route>
-        </Routes>
       </div>
     </div>
   );

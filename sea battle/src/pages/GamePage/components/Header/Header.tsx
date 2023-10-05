@@ -1,14 +1,10 @@
-import { GameModeIndicator } from './Indication/GameModeIndicator/GameModeIndicator';
-import { PlayerName } from './Indication/PlayerName/PlayerName';
-import { Score } from './Indication/Score/Score';
 import style from './Header.module.css';
+import { Indication } from './Indication/Indication';
 
 export const Header = () => {
   return (
     <div className={style.header}>
-      <PlayerName></PlayerName>
-      <GameModeIndicator></GameModeIndicator>
-      <Score></Score>
+      <Indication></Indication>
     </div>
   );
 };

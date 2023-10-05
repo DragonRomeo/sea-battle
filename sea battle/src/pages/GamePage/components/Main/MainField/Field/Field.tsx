@@ -1,7 +1,11 @@
+import { Cell } from "./Cell/Cell"
+
 
 
 export const Field = () => {
   return (
-    <div>Field</div>
+    <div>
+      
+    </div>
   )
 }
