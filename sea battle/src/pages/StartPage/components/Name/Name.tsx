@@ -11,9 +11,9 @@ interface Props {
 
 export const Name: FC<Props> = ({ text, name, id, onChange }) => {
   return (
-    <>
+    <div className={styles.container}>
       <p>{text}</p>
       <input type='text' name={name} id={id} onChange={onChange} />
-    </>
+    </div>
   );
 };
