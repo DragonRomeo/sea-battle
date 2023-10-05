@@ -4,7 +4,7 @@ import styles from './StartPage.module.css';
 import { Name } from './components/Name/Name';
 import { GameMode } from './components/GameMode/GameMode';
 import { ChangeEvent } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 interface Props {
   className?: string;
@@ -13,11 +13,33 @@ interface Props {
 
 export const StartPage: FC<Props> = () => {
   const [value, setValue] = useState('1');
+  const [nickname, setNickname] = useState('');
+
+  const navigate = useNavigate();
+
+  const goingNextPage = (e) => {
+    e.preventDefault();
+    if (nickname) {
+      localStorage.nickname = nickname;
+      navigate('/game');
+    }
+  };
 
   return (
     <div className={styles.page}>
       <div className={styles.mainContainer}>
-        <Name text='Введите ваше имя'></Name>
+        <Name
+          text='Введите ваше имя'
+          name='nickname'
+          id='nickname'
+          onChange={(event) => setNickname(event.target.value)}
+        ></Name>
+        {/* <input
+          type='text'
+          name='nickname'
+          id='nickname'
+          onChange={(e) => setNickname(e.target.value)}
+        /> */}
         <GameMode
           heading='Выберите режим'
           firstMode='Стрельба строго по очереди'
@@ -29,8 +51,8 @@ export const StartPage: FC<Props> = () => {
           value={value}
         ></GameMode>
 
-        <button className={styles.button}>
-          <Link to='/game'>NextPage</Link>
+        <button onClick={goingNextPage} className={styles.button}>
+          {/* <a onClick={goingNextPage}>NextPage</a> */}
         </button>
       </div>
     </div>
