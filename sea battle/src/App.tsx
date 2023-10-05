@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 import { StartPage } from './pages/StartPage/StartPage';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { NotFoundPage } from './pages/NotFoundPage/NotFoundPage';
 import { GamePage } from './pages/GamePage/GamePage';
 
