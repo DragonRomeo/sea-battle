@@ -1,6 +1,6 @@
 
 export const Score = () => {
   return (
-    <div>Score</div>
+    <p>Score</p>
   )
 }

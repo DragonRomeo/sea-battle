@@ -12,7 +12,7 @@ interface Props {
 }
 
 export const StartPage: FC<Props> = () => {
-  const [value, setValue] = useState('1');
+  const [value, setValue] = useState('Стрельба строго по очереди');
   const [nickname, setNickname] = useState('');
 
   const navigate = useNavigate();
@@ -21,6 +21,7 @@ export const StartPage: FC<Props> = () => {
     event.preventDefault();
     if (nickname) {
       localStorage.nickname = nickname;
+      localStorage.gamemode = value;
       navigate('/game');
     }
   };
@@ -38,17 +39,14 @@ export const StartPage: FC<Props> = () => {
           heading='Выберите режим'
           firstMode='Стрельба строго по очереди'
           secondMode='Стрельба до промаха'
-          checked={value === '1' ? true : false}
-          onChange={(event: ChangeEvent<HTMLInputElement>) =>
-            setValue(event.target.value)
-          }
+          checked={value === 'Стрельба строго по очереди' ? true : false}
+          onChange={(event: ChangeEvent<HTMLInputElement>) => {
+            setValue(event.target.value);
+          }}
           value={value}
         ></GameMode>
 
-        <button
-          onClick={goingNextPage}
-          className={styles.button}
-        ></button>
+        <button onClick={goingNextPage} className={styles.button}></button>
       </div>
     </div>
   );

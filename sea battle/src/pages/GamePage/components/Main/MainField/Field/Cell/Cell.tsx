@@ -6,5 +6,5 @@ interface Props {
 }
 
 export const Cell: FC<Props> = ({id}) => {
-  return <div className={style.cell} id={id}></div>;
+  return <div className={style.cell} id={id} onClick={() => console.log(id)}></div>;
 };

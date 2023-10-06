@@ -28,7 +28,7 @@ export const GameMode: FC<Props> = ({
           <input
             type='radio'
             name='choice'
-            value='1'
+            value='Стрельба строго по очереди'
             checked={checked}
             onChange={onChange}
           ></input>
@@ -39,8 +39,8 @@ export const GameMode: FC<Props> = ({
           <input
             type='radio'
             name='choice'
-            value='2'
-            checked={value === '2' ? true : false}
+            value='Стрельба до промаха'
+            checked={value === 'Стрельба до промаха' ? true : false}
             onChange={onChange}
           ></input>
           <p>{secondMode}</p>

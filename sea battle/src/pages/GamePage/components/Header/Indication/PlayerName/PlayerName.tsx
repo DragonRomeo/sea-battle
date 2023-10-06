@@ -1,6 +1,7 @@
+import { useState } from 'react';
 
 export const PlayerName = () => {
-  return (
-    <div>PlayerName</div>
-  )
-}
+  const [name] = useState(localStorage.nickname);
+
+  return <p>{name}</p>;
+};
