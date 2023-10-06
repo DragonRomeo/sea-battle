@@ -1,5 +1,10 @@
 import style from './Cell.module.css';
+import { FC } from 'react';
 
-export const Cell = () => {
-  return <div className={style.cell}></div>;
+interface Props {
+  id?: string;
+}
+
+export const Cell: FC<Props> = ({id}) => {
+  return <div className={style.cell} id={id}></div>;
 };
