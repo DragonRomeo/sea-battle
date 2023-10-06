@@ -1,0 +1,7 @@
+.cell {
+  width: 4vh;
+  height: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

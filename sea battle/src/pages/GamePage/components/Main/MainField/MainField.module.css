@@ -1,11 +1,12 @@
-.mainContainer {
-    display: flex;
-    align-items: center ;
-    width: 100%;
-    margin-top: 10vh;
+.mainField {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 10vh;
 }
 
 .fieldContainer {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
