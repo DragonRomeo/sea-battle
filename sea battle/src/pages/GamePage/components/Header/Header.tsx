@@ -3,8 +3,8 @@ import { Indication } from './Indication/Indication';
 
 export const Header = () => {
   return (
-    <div className={style.header}>
+    <header className={style.header}>
       <Indication></Indication>
-    </div>
+    </header>
   );
 };
