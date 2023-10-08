@@ -1,27 +1,29 @@
 .container {
-    width: 20vh;
-    height: 35vh;
-    border: 2px solid white;
+  width: 20vh;
+  height: 35vh;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .ship {
-    border: 2px solid rebeccapurple;
-    width: 4vh;
-  }
-  
-  .shipVeryBig {
-    height: 16vh;
-  }
-  
-  .shipLarge {
-    height: 12vh;
-  }
-  
-  .shipMedium {
-    height: 8vh;
-  }
-  
-  .shipSmall {
-    height: 4vh;
-  }
-  
+  border: 2px solid rebeccapurple;
+  width: 4vh;
+}
+
+.shipVeryBig {
+  height: 16vh;
+}
+
+.shipLarge {
+  height: 12vh;
+}
+
+.shipMedium {
+  height: 8vh;
+}
+
+.shipSmall {
+  height: 4vh;
+}
