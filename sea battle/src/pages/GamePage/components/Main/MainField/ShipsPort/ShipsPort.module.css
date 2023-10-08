@@ -3,3 +3,25 @@
     height: 35vh;
     border: 2px solid white;
 }
+
+.ship {
+    border: 2px solid rebeccapurple;
+    width: 4vh;
+  }
+  
+  .shipVeryBig {
+    height: 16vh;
+  }
+  
+  .shipLarge {
+    height: 12vh;
+  }
+  
+  .shipMedium {
+    height: 8vh;
+  }
+  
+  .shipSmall {
+    height: 4vh;
+  }
+  
