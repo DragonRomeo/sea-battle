@@ -1,9 +1,15 @@
+@import url('../../../../../assets/styles/variables.css');
+
 .mainField {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
+  width: 90%;
   margin-top: 10vh;
+  border: 2px solid var(--GP-border-color);
+  border-radius: var(--GP-border-size);
+  padding: 20px 20px;
+  background: var(--GP-BG-RGB);
 }
 
 .fieldContainer {

@@ -1,5 +1,12 @@
 :root {
+  /* Start page*/
   --border-size: 10px;
   --h4-text-size: 21px;
   --SP-border-color: black;
+
+  /* Game page*/
+
+  --GP-border-size: 20px;
+  --GP-border-color: transparent;
+  --GP-BG-RGB: rgba(13, 135, 216, 0.5);
 }
