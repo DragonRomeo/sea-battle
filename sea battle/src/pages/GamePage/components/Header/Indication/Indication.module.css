@@ -10,4 +10,16 @@
   border-radius: var(--GP-border-size);
   margin-top: 2vh;
   background: var(--GP-BG-RGB);
+  padding: 5px 5px;
+}
+
+
+.indicator {
+  display: flex;
+  flex-direction: column;
+}
+
+.h5 {
+  font-size: 18px;
+  margin: 0;
 }
