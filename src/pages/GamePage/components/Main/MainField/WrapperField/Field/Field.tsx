@@ -1,4 +1,3 @@
-import React from 'react';
 import { Cell } from './Cell/Cell.tsx';
 import type { FC } from 'react';
 import style from './Field.module.css';

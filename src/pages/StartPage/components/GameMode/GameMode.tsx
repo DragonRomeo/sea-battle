@@ -1,51 +1,34 @@
-import type { FC } from 'react';
+import cn from 'classnames'
+import type {FC} from 'react';
+
+import {GameMode} from "../../../../core/store/game-mode";
 import styles from './GameMode.module.css';
-import { ChangeEvent } from 'react';
 
 interface Props {
-  heading: string;
-  firstMode: string;
-  secondMode: string;
+  value: GameMode;
+  className?: string;
   checked: boolean;
-  onChange: (event: ChangeEvent<HTMLInputElement>) => void;
-  value: string;
+  onChange: (mode: GameMode) => void;
+  children?: string;
 }
 
-export const GameMode: FC<Props> = ({
-  heading,
-  firstMode,
-  secondMode,
+export const RadioInput: FC<Props> = ({
+  value,
+  className,
   checked,
   onChange,
-  value,
-}) => {
+  children
+                                      }) => {
   return (
-    <>
-      <div className={styles.choiceMode}>
-        <h4 className={styles.choiceName}>{heading}</h4>
-
-        <div className={styles.choiceItem}>
-          <input
-            type='radio'
-            name='choice'
-            value='Стрельба строго по очереди'
-            checked={checked}
-            onChange={onChange}
-          ></input>
-          <p className={styles.text}>{firstMode}</p>
-        </div>
-
-        <div className={styles.choiceItem}>
-          <input
-            type='radio'
-            name='choice'
-            value='Стрельба до промаха'
-            checked={value === 'Стрельба до промаха' ? true : false}
-            onChange={onChange}
-          ></input>
-          <p className={styles.text}>{secondMode}</p>
-        </div>
-      </div>
-    </>
-  );
-};
+    <div className={cn(className, styles.choiceItem)} onClick={() => onChange(value)}>
+      <input
+        type='radio'
+        name='choice'
+        value={value}
+        checked={checked}
+        onChange={() => onChange(value)}
+      ></input>
+      <p className={styles.text}>{children}</p>
+    </div>
+  )
+}
