@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import type { FC } from 'react';
 import styles from './StartPage.module.css';
-import { Name } from './components/Name/Name';
-import { GameMode } from './components/GameMode/GameMode';
+import { Name } from './components/Name/Name.tsx';
+import { GameMode } from './components/GameMode/GameMode.tsx';
 import { ChangeEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
 

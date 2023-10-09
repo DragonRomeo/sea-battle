@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { GamePage } from '../pages/GamePage/GamePage';
+import { GamePage } from '../pages/GamePage/GamePage.tsx';
 
 export const RouterComponent = () => {
   return (

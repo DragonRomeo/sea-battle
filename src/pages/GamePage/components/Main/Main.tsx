@@ -1,4 +1,4 @@
-import { MainField } from './MainField/MainField';
+import { MainField } from './MainField/MainField.tsx';
 // import style from './Main.module.css';
 
 export const Main = () => {

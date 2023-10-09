@@ -1,6 +1,6 @@
-import { GameModeIndicator } from './GameModeIndicator/GameModeIndicator';
-import { PlayerName } from './PlayerName/PlayerName';
-import { Score } from './Score/Score';
+import { GameModeIndicator } from './GameModeIndicator/GameModeIndicator.tsx';
+import { PlayerName } from './PlayerName/PlayerName.tsx';
+import { Score } from './Score/Score.tsx';
 import style from './Indication.module.css';
 
 export const Indication = () => {

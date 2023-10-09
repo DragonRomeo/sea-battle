@@ -1,8 +1,8 @@
 import type { FC } from 'react';
-import { StartPage } from './pages/StartPage/StartPage';
+import { StartPage } from './pages/StartPage/StartPage.tsx';
 import { Routes, Route } from 'react-router-dom';
-import { NotFoundPage } from './pages/NotFoundPage/NotFoundPage';
-import { GamePage } from './pages/GamePage/GamePage';
+import { NotFoundPage } from './pages/NotFoundPage/NotFoundPage.tsx';
+import { GamePage } from './pages/GamePage/GamePage.tsx';
 import './assets/styles/global.css'
 
 export const App: FC = () => {

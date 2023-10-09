@@ -1,5 +1,5 @@
-import { CoordinateCell } from './Field/CoordinateCell/CoordinateCell';
-import { Field } from './Field/Field';
+import { CoordinateCell } from './Field/CoordinateCell/CoordinateCell.tsx';
+import { Field } from './Field/Field.tsx';
 import style from './WrapperField.module.css';
 
 export const WrapperField = () => {

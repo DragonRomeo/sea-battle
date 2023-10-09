@@ -1,5 +1,5 @@
 import style from './Header.module.css';
-import { Indication } from './Indication/Indication';
+import { Indication } from './Indication/Indication.tsx';
 
 export const Header = () => {
   return (

@@ -1,6 +1,6 @@
 import style from './MainField.module.css';
-import { ShipsPort } from './ShipsPort/ShipsPort';
-import { WrapperField } from './WrapperField/WrapperField';
+import { ShipsPort } from './ShipsPort/ShipsPort.tsx';
+import { WrapperField } from './WrapperField/WrapperField.tsx';
 
 export const MainField = () => {
   return (

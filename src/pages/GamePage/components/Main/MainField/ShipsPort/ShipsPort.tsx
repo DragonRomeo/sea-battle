@@ -1,4 +1,4 @@
-import { Ship } from './Ship/Ship';
+import { Ship } from './Ship/Ship.tsx';
 import style from './ShipsPort.module.css';
 
 const ships = {
