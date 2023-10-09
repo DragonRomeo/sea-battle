@@ -22,7 +22,7 @@ export const GameMode: FC<Props> = ({
   return (
     <>
       <div className={styles.choiceMode}>
-        <p>{heading}</p>
+        <h4 className={styles.choiceName}>{heading}</h4>
 
         <div className={styles.choiceItem}>
           <input
@@ -32,7 +32,7 @@ export const GameMode: FC<Props> = ({
             checked={checked}
             onChange={onChange}
           ></input>
-          <p>{firstMode}</p>
+          <p className={styles.text}>{firstMode}</p>
         </div>
 
         <div className={styles.choiceItem}>
@@ -43,7 +43,7 @@ export const GameMode: FC<Props> = ({
             checked={value === 'Стрельба до промаха' ? true : false}
             onChange={onChange}
           ></input>
-          <p>{secondMode}</p>
+          <p className={styles.text}>{secondMode}</p>
         </div>
       </div>
     </>

@@ -46,7 +46,7 @@ export const StartPage: FC<Props> = () => {
           value={value}
         ></GameMode>
 
-        <button onClick={goingNextPage} className={styles.button}></button>
+        <button className={styles.button} onClick={goingNextPage}>Принять</button>
       </div>
     </div>
   );
